@@ -10,7 +10,7 @@ bot.on('ready', function () {
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur de Link' + member.displayName)
+        return channel.send('Bienvenue sur le serveur de Link, veuillez prendre connaissances des instructions à suivres dans le channel #description. N hesitez pas à MP le staf si vous avez des questions. Merci.' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
 });
